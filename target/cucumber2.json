@@ -1,0 +1,469 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-20T22:30:51.277Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6791000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Google title verification after search",
+        "description": "",
+        "id": "search;google-title-verification-after-search;search-value-i-want-to-search-in-google;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1958000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8519332000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 102000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.setUpStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "User is on the google search page",
+            "match": {
+              "location": "com.cybertek.step_definitions.GoogleStepDefinitions.user_is_on_the_google_search_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 119000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.tearDownStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4708668000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 74000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.setUpStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "User searches \"apple\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"apple\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.cybertek.step_definitions.GoogleStepDefinitions.userSearches(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 111000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.tearDownStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17056000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 90000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.setUpStep()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "User should see \"apple\" in the title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"apple\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.cybertek.step_definitions.GoogleStepDefinitions.userShouldSeeInTheTitle(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 247000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.tearDownStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@scenarioOutline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-20T22:31:04.568Z",
+        "before": [
+          {
+            "result": {
+              "duration": 129000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Google title verification after search",
+        "description": "",
+        "id": "search;google-title-verification-after-search;search-value-i-want-to-search-in-google;3",
+        "after": [
+          {
+            "result": {
+              "duration": 259000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 787936000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 49000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.setUpStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "User is on the google search page",
+            "match": {
+              "location": "com.cybertek.step_definitions.GoogleStepDefinitions.user_is_on_the_google_search_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 123000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.tearDownStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2971800000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 47000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.setUpStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "User searches \"kiwi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"kiwi\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.cybertek.step_definitions.GoogleStepDefinitions.userSearches(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 74000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.tearDownStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16695000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 47000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.setUpStep()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "User should see \"kiwi\" in the title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"kiwi\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.cybertek.step_definitions.GoogleStepDefinitions.userShouldSeeInTheTitle(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 186000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.tearDownStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@scenarioOutline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-20T22:31:08.373Z",
+        "before": [
+          {
+            "result": {
+              "duration": 110000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Google title verification after search",
+        "description": "",
+        "id": "search;google-title-verification-after-search;search-value-i-want-to-search-in-google;4",
+        "after": [
+          {
+            "result": {
+              "duration": 48000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 832152000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 48000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.setUpStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "User is on the google search page",
+            "match": {
+              "location": "com.cybertek.step_definitions.GoogleStepDefinitions.user_is_on_the_google_search_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 121000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.tearDownStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3419023000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 91000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.setUpStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "User searches \"orange\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"orange\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.cybertek.step_definitions.GoogleStepDefinitions.userSearches(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 116000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.tearDownStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16937000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 79000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.setUpStep()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "User should see \"orange\" in the title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"orange\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.cybertek.step_definitions.GoogleStepDefinitions.userShouldSeeInTheTitle(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 77000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.tearDownStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@scenarioOutline"
+          }
+        ]
+      }
+    ],
+    "name": "Search",
+    "description": "  Agile Story: As a user, I should be able to search when I am on Google search",
+    "id": "search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/GoogleSearchScenarioOutline.feature",
+    "tags": []
+  }
+]
