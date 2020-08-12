@@ -6,10 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.remote.RemoteWebDriver;
-
-import java.net.MalformedURLException;
-import java.net.URL;
 
 //We create Driver utilities using Singleton Design Pattern.
 //-> How did we achieve singleton?
@@ -49,7 +45,13 @@ public class Driver {// Singleton Class: private constructor and public getter m
                 case "firefox-headless":
                     WebDriverManager.firefoxdriver().setup();
                     driver=new FirefoxDriver(new FirefoxOptions().setHeadless(true));
-                    break;
+                   // break;
+
+
+
+                  /*
+
+                  //===============================================================
                 case "chrome-remote":// Connection with Selenium Grid
                     try {
                         // same thing as ChromeOptions
@@ -77,9 +79,19 @@ public class Driver {// Singleton Class: private constructor and public getter m
 
                 default:
                     throw new RuntimeException("Wrong browser name :: "+browser);
+                 //===================================================================
+                   */
+
+
 
             }
+
         }
+
+
+
+
+
 
         return driver;
 
