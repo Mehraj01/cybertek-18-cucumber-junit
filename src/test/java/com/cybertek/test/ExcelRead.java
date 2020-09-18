@@ -10,9 +10,8 @@ public class ExcelRead {
     public static void main(String[] args) throws Exception {
 
 
-        File file=new File("src/SampleData.xlsx");
+        File file=new File("src/test/resources/testdata/SampleData.xlsx");
         //System.out.println(file.exists());
-
         //LOAD THE FILE INTO JAVA MEMORY
         FileInputStream fileInputStream=new FileInputStream(file);
         // Load the excel workbook into the java class
@@ -24,7 +23,6 @@ public class ExcelRead {
         XSSFSheet sheet=workbook.getSheet("Employees");
 
         //How to get Sandler from the excel sheet
-
         System.out.println(sheet.getRow(2).getCell(1));
         // row top to bottom 0,1,2.. cell left to right 0,1,2...
 

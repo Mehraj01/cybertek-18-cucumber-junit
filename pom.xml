@@ -50,6 +50,7 @@
 
 
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+        <!-- For DDT -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
@@ -64,33 +65,37 @@
 
 
 
-
-
-
-
-
     </dependencies>
 
 
     <build>
+
         <plugins>
+
+            <!-- maven-surefire-plugin: -> allows us to run maven lifecycle commands  -->
+            <!-- Maven Life Cycle > compile > test >package > verify > install > deploy -->
+            <!--  (For Parallel testing (Parallelization) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
                     <includes>
-                        <include>**/*ParallelRunner*.java</include>
+                        <include>**/CukesRunner.java</include>
+                        <include>**/FailedTestRunner.java</include>
+                        <include>**/*ParallelRunner*.java</include> <!-- This line means run the class that has ParallelRunner*.java -->
                     </includes>
-                    <testFailureIgnore>true</testFailureIgnore>
+                    <testFailureIgnore>false</testFailureIgnore>
                     <runOrder>alphabetical</runOrder>
                     <parallel>methods</parallel>
-                    <threadCount>3</threadCount>
+                    <threadCount>3</threadCount> <!-- 3-number means run up to how many browser we need to open -->
                     <perCoreThreadCount>false</perCoreThreadCount>
                     <forkCount>2C</forkCount>
                 </configuration>
             </plugin>
 
+
+            <!-- maven-cucumber-reporting: -> uses cucumber json reporting generate it own report -->
             <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
@@ -114,6 +119,8 @@
                 </executions>
             </plugin>
 
+
+            <!-- -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -123,6 +130,7 @@
                 </configuration>
             </plugin>
         </plugins>
+
     </build>
 
 

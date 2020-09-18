@@ -16,13 +16,11 @@ public class ExcelWrite {
         XSSFRow row;
         XSSFCell cell;
 
-        String path ="src/SampleData.xlsx";
+        String path ="src/test/resources/testdata/SampleData.xlsx";
         FileInputStream fileInputStream=new FileInputStream(path);
-
         //workBook > sheet > row > cell
         // loading excel workbook into class
         workbook =new XSSFWorkbook(fileInputStream);
-
         //get our sheet
         sheet=workbook.getSheet("Employees");
 
