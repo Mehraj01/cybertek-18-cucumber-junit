@@ -81,7 +81,6 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <includes>
-                        <include>**/RegressionRunner*.java</include>
                         <include>**/CukesRunner.java</include>
                         <include>**/FailedTestRunner.java</include>
                         <include>**/*ParallelRunner*.java</include> <!-- This line means run the class that has ParallelRunner*.java -->
@@ -133,6 +132,37 @@
         </plugins>
 
     </build>
+
+
+
+    <profiles>
+        <profile>
+            <id>Regression</id>
+            <build>
+                <plugins>
+                    <plugin>
+
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>3.0.0-M5</version>
+
+                        <configuration>
+                            <parallel>methods</parallel>
+                            <perCoreThreadCount>false</perCoreThreadCount>
+                            <threadCountMethods>2</threadCountMethods>
+                            <includes>
+                                <include>**/RegressionRunner.java</include>
+                            </includes>
+                            <testFailureIgnore>false</testFailureIgnore>
+                        </configuration>
+
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+
 
 
 
